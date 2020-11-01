@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Books</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+        }
+        #t01 tr:nth-child(even) {
+            background-color: #eee;
+        }
+        #t01 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+        #t01 th {
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body style="background-image:url('https://rsu.ac.in/wp-content/uploads/2020/02/photo-1524995997946-a1c2e315a42f.jpg'); background-color:cyan;">
+    <h2 style="color: blue;"><marquee>College of Engineering, Pune </marquee></h2>
+    <h2 style="text-align:center;">List of books</h2>
+    <table id="t01" style="width:100%;border: 1px solid black;">
+        <tr>
+            <th>Book Name</th>
+            <th>Publisher</th>
+            <th>Price</th>
+            <th>Available Copies</th>
+        </tr>
+        {% for book in books %}
+            <tr>
+
+                    <td style="text-align:center;">{{ book.title }}</td>
+                    <td style="text-align:center;">{{ book.publisher }}</td>
+                    <td style="text-align:center;">{{book.price}}</td>
+                    <td style="text-align:center;">{{book.available_copies}}</td>
+
+            </tr>
+        {% endfor %}
+    </table>
+    <Br><Br><Br><Br><Br>
+        <a href="/book/home/">Go to previous page...</a><br><br>
+        <a href="/book/">Take me to homepage...</a>
+</body>
+</html>

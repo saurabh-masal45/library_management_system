@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Issue Book</title>
+</head>
+<body style="background-image:url('https://rsu.ac.in/wp-content/uploads/2020/02/photo-1524995997946-a1c2e315a42f.jpg'); background-color:cyan;">
+    <form method="post" action="/book/issue_book/" style="width: 22%;margin-top: 200px;margin-left: 550px;border: 1px solid #161212;"> {% csrf_token %}
+        <div style="color: green;text-align: center;padding: 3px;">
+            <h1>Issue Book</h1>
+            <hr>
+        </div>
+
+        <table>
+            <tr style="color:blue;">
+                <td class="element">Member id:</td>
+                <td><input type="text" name="mid" class="textInput" placeholder="Enter ID"></td>
+            </tr>
+            <tr style="color:blue;">
+                <td class="element">Title of book:</td>
+                <td><input type="text" name="title" class="textInput" placeholder="Title"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="element"><button type="submit" name="issue_book" class="btn" style="margin-left:50px">Issue Book</button></td>
+            </tr>
+        </table>
+
+
+    </form>
+    <Br><Br><Br><Br><Br>
+        <a href="/book/home/">Go to previous page...</a><br><br>
+        <a href="/book/">Take me to homepage...</a>
+</body>
+</html>

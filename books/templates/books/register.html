@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body style="background-image:url('https://rsu.ac.in/wp-content/uploads/2020/02/photo-1524995997946-a1c2e315a42f.jpg'); background-color:cyan;">
+    <h2 style="color: blue;"><marquee>College of Engineering, Pune </marquee></h2>
+    <form method="post" action="/book/member_home/" style="width: 20%;padding: 30px;border: 1px solid #cbcbcb;margin-top: 150px;margin-left: 550px;">  {% csrf_token %}
+        <div class="header">
+            <h1 style="text-align: center;">Signup</h1>
+        </div>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="username" class="textInput" placeholder="Enter your name"></td>
+            </tr>
+
+            <tr>
+                <td>Department:</td>
+                <td><input type="text" name="dept" class="textInput" placeholder="Department"></td>
+            </tr>
+
+            <tr>
+                <td>Role:</td>
+                <td><input type="text" name="role" class="textInput" placeholder="teacher/student"></td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" class="textInput" placeholder="password"></td>
+            </tr>
+
+            <tr>
+            <td></td>
+                <td><button type="submit" name="Register" class="btn">Register</button></td>
+            </tr>
+
+        </table>
+
+    </form>
+    <Br><Br><Br><Br><Br>
+        <a href="/book/">Take me to homepage...</a>
+</body>
+</html>
+
+<!-- Use this form to get password
+
+<form class="form-inline">
+  <div class="form-group">
+    <label for="inputPassword6">Password</label>
+    <input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+    <small id="passwordHelpInline" class="text-muted">
+      Must be 8-20 characters long.
+    </small>
+  </div>
+</form>-->

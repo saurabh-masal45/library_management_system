@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Book</title>
+</head>
+<body style="background-image:url('https://rsu.ac.in/wp-content/uploads/2020/02/photo-1524995997946-a1c2e315a42f.jpg'); background-color:cyan;">
+    <form method="post" action="/book/add_book/" style="width: 20%;padding: 30px;border: 1px solid #cbcbcb;margin-top: 200px;margin-left: 550px;">  {% csrf_token %}
+        <div class="header">
+            <h1 style="text-align: center;">ADD NEW BOOK</h1>
+        </div>
+        <table>
+            <tr>
+                <td>Title:</td>
+                <td><input type="text" name="title" class="textInput" placeholder=""></td>
+            </tr>
+
+            <tr>
+                <td>Publisher:</td>
+                <td><input type="text" name="publisher" class="textInput" placeholder=""></td>
+            </tr>
+
+            <tr>
+                <td>Price:</td>
+                <td><input type="text" name="price" class="textInput" placeholder=""></td>
+            </tr>
+
+            <tr>
+                <td>No. of copies:</td>
+                <td><input type="text" name="no_of_copies" class="textInput"></td>
+            </tr>
+
+            <tr>
+                <td>Author:</td>
+                <td><input type="text" name="author" class="textInput"></td>
+            </tr>
+
+            <tr>
+            <td></td>
+                <td><button type="submit" name="add" class="btn" style="margin-left: 120 px">Add Book</button></td>
+            </tr>
+
+        </table>
+
+    </form>
+    <Br><Br><Br><Br><Br>
+        <a href="/book/home/">Go to previous page...</a><br><br>
+        <a href="/book/">Take me to homepage...</a>
+</body>
+</html>

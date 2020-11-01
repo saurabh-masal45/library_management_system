@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+</head>
+<body>
+    <h2 style="color: blue;"><marquee>College of Engineering, Pune </marquee></h2>
+    <form method="post" action="/book/home/" style="width: 20%;padding: 30px;border: 1px solid #cbcbcb;margin-top: 150px;margin-left: 550px;">  {% csrf_token %}
+        <h2 style="color: green; text-align:center;">Welcome to Library!!</h2 ><hr>
+        <h3 style="text-align: center;">Admin Login</h3>
+        Enter password:<input type="password" placeholder="Admin password" name="admin_password"><br><br>
+        <button type="submit" style="margin-left: 120px">Login</button>
+    </form>
+    <Br><Br><Br><Br><Br>
+        <a href="/book/">Take me to homepage...</a>
+</body>
+</html>

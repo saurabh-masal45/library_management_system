@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body style="background-image:url('https://www.magd.cam.ac.uk/sites/default/files/styles/1302x600/public/2017-09/magdalene_college_library.jpg?itok=1v6BgUME'); background-color:cyan;">
+    <h2 style="color: blue;"><marquee>College of Engineering, Pune </marquee></h2>
+    <form method="post" action="/book/login/" style="width: 22%;margin-top: 150px;margin-left: 550px;"> {% csrf_token %}
+        <div style="color: green;text-align: center;padding: 3px;">
+            <h1 style="color: rgb(10, 31, 7);">Welcome Back</h1>
+            <hr>
+        </div>
+
+        <table>
+            <tr style="color: black; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: medium;">
+                <td class="element">Member id:</td>
+                <td><input type="text" name="mid" class="textInput" placeholder="Enter ID"></td>
+            </tr>
+
+            <tr style="color: black; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: larger;">
+                <td class="element">Password:</td>
+                <td><input type="password" name="password" class="textInput" placeholder="Password"></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td></td>
+                <td class="element"><button type="submit" name="Login" class="btn" style="margin-left:50px">Sign in</button></td>
+            </tr>
+
+        </table>
+
+    </form>
+    <Br><Br><Br><Br><Br>
+        <a href="/book/">Take me to homepage...</a>
+
+</body>
+</html>
