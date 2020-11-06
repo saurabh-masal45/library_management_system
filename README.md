@@ -1,4 +1,4 @@
-# library_management_system
+# library Management System
 DBMS project for library management using django framework with sqlite database
 
 Softwares used:
